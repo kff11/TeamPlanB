@@ -147,7 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="제로페이 이용 시 서울시 식물원 입장료 30% 할인!" />
+                android:text="제로페이 이용 시 서울시 식물원 입장료 30% 할인! " />
         </LinearLayout>
 
 
