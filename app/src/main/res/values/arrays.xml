@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 모든 식물원 이름 -->
+    <string-array name="allGarden">
+        <item>마곡식물원</item>
+        <item>관악산야외식물원</item>
+        <item>남산야외식물원</item>
+        <item>서울대공원식물원</item>
+        <item>서울어린이대공원식물원</item>
+        <item>서울숲곤충식물원</item>
+        <item>서울창포원</item>
+        <item>전통염료식물원</item>
+        <item>푸른수목원</item>
+        <item>홍릉수목원</item>
+    </string-array>
+    <!-- 모든 식물원 이름 -->
+
+    <!-- 모든 식물원 주소 -->
+    <string-array name="allGarden_address">
+        <item>서울 강서구 마곡동로 161</item>
+        <item>서울 관악구 신림동 205-5</item>
+        <item>서울 용산구 소월로 323</item>
+        <item>경기도 과천시 막계동 대공원광장로 102</item>
+        <item>서울 광진구 능동로 216</item>
+        <item>서울 성동구 성수동1가 685-715</item>
+        <item>서울 도봉구 마들로 916</item>
+        <item>서울 용산구 서빙고로 137</item>
+        <item>서울 구로구 연동로 240</item>
+        <item>서울 동대문구 회기로 57</item>
+    </string-array>
+
+    <!-- 식물원 이미지 -->
+    <array name="indoorGarden_Image">
+        <item>@drawable/magok1</item>
+        <item>@drawable/gwan1</item>
+        <item>@drawable/south1</item>
+        <item>@drawable/seoul1</item>
+        <item>@drawable/child1</item>
+        <item>@drawable/bug1</item>
+        <item>@drawable/changpo1</item>
+        <item>@drawable/dyes1</item>
+        <item>@drawable/blue1</item>
+        <item>@drawable/hong1</item>
+    </array>
+    <!-- 식물원 이미지 -->
+
+    <!-- 추천 식물원 이미지 -->
+    <array name="rcmdGarden_Image">
+        <item>@drawable/magok_rcmd</item>
+        <item>@drawable/seoul_rcmd</item>
+        <item>@drawable/child_rcmd</item>
+        <item>@drawable/bug_rcmd</item>
+    </array>
+    <!-- 추천 식물원 이미지 -->
+
+    <!-- 추천 식물원 이름 -->
+    <array name="rcmdGarden_name">
+        <item>마곡식물원</item>
+        <item>서울대공원식물원</item>
+        <item>서울어린이대공원식물원</item>
+        <item>서울숲곤충식물원</item>
+    </array>
+    <!-- 추천 식물원 이름 -->
+
+    <!-- 내 화분 이미지 -->
+    <array name="myFlower_Image_0">
+        <item>@drawable/myflower_0</item>
+        <item>@drawable/myflower_0</item>
+        <item>@drawable/myflower_0</item>
+        <item>@drawable/myflower_0</item>
+        <item>@drawable/myflower_0</item>
+        <item>@drawable/myflower_gasi_0</item>
+    </array>
+
+    <array name="myFlower_Image_1">
+        <item>@drawable/myflower_sum_1</item>
+        <item>@drawable/myflower_giseng_1</item>
+        <item>@drawable/myflower_sebul_1</item>
+        <item>@drawable/myflower_yo_1</item>
+        <item>@drawable/myflower_pungran_1</item>
+        <item>@drawable/myflower_gasi_1</item>
+    </array>
+
+    <array name="myFlower_Image_2">
+        <item>@drawable/myflower_sum_2</item>
+        <item>@drawable/myflower_giseng_2</item>
+        <item>@drawable/myflower_sebul_2</item>
+        <item>@drawable/myflower_yo_2</item>
+        <item>@drawable/myflower_pungran_2</item>
+        <item>@drawable/myflower_gasi_2</item>
+    </array>
+
+    <array name="myFlower_Image_3">
+        <item>@drawable/myflower_sum_3</item>
+        <item>@drawable/myflower_giseng_3</item>
+        <item>@drawable/myflower_sebul_3</item>
+        <item>@drawable/myflower_yo_3</item>
+        <item>@drawable/myflower_pungran_3</item>
+        <item>@drawable/myflower_gasi_3</item>
+    </array>
+    <!-- 내 화분 이미지 -->
+
+
+
+</resources>

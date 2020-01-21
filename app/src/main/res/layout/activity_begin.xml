@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BeginActivity"
+    android:background="#FFF">
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:id="@+id/begin_gif"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/begin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/test"
+            style="@style/TEXTVIEW_STYLE_TITLE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="이 화분의 이름을 지어주세요." />
+
+        <EditText
+            android:id="@+id/begin_firstNickname"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLength="8"
+            android:singleLine="true" />
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/round_buttn_myflower"
+            android:onClick="onClick"
+            android:text="결정"
+            android:textColor="#ebfceb"
+            style="@style/TEXTVIEW_STYLE_SUB"
+            />
+    </LinearLayout>
+
+</LinearLayout>

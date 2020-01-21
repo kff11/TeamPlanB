@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">초르르서울</string>
+    <integer name="INFO_TITLE_MARGINTOP">30</integer>
+    <integer name="myFlower_size">100</integer>
+
+    <!-- 식물원 주소 -->
+    <string name="magokAdderss">서울 강서구 마곡동로 161 서울식물원</string>
+    <string name="gwanakAdderss">서울 관악구 신림동 205-5</string>
+    <string name="namsanAdderss">서울 용산구 소월로 323</string>
+    <string name="bigparkAdderss">경기도 과천시 막계동 대공원광장로 102</string>
+    <string name="childAdderss">서울 광진구 능동로 216</string>
+    <string name="insectAdderss">서울 성동구 성수동1가 685-715</string>
+    <string name="changpoAdderss">서울 도봉구 마들로 916</string>
+    <string name="dyeAdderss">서울 용산구 서빙고로 137</string>
+    <string name="blueAdderss">서울 구로구 연동로 240</string>
+    <string name="hongleungAdderss">서울 동대문구 회기로 57</string>
+    <!-- 식물원 주소 -->
+
+    <!-- 설명 문구 -->
+    <string name="help1">[ 내 화분 ] 은 여러분들만의 화분을 키우는 공간입니다. 화분 속 식물은 여러분들이 식물원에 다녀온 만큼 자란답니다.</string>
+    <string name="help2">[ 홈 화면 ]에 보이는 출석하기 버튼이 보이시죠?\n이 버튼을 누르면 QR코드를 찍을 수 있습니다.</string>
+    <string name="help3">식물원마다 QR코드가 있어서 코드를 인식하면, 출석을 하실 수 있습니다. :)\n* 입구마다 부착된 QR코드를 찾아보세요!</string>
+    <string name="help4">이렇게 식물원 출석 도장 4개가 쌓여 화분이 다 자라게 되면, 화분의 진짜 정체를 알 수 있답니다!</string>
+    <!-- 설명 문구 -->
+</resources>

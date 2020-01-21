@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_bottom_navigation_height" tools:override="true">64dp</dimen>
+    <dimen name="viewpager_image_height">250dp</dimen>
+    <dimen name="myFlower_height">150dp</dimen>
+    <dimen name="home_marinHorizontal">20dp</dimen>
+    <dimen name="home_marinVertical">50dp</dimen>
+    <dimen name="info_btn_size">40dp</dimen>
+    <dimen name="home_check_size">70dp</dimen>
+</resources>

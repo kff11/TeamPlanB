@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.TeamPlanB.ChorrSeoul.Infomation.InformationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFF"
+        android:paddingRight="15dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- 식물원 뷰페이저 -->
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/information_viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <!-- 뷰페이저 다음 버튼 -->
+                    <Button
+                        android:id="@+id/right"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/icon_right"
+                        android:onClick="pictureMove" />
+
+                    <!-- 뷰페이저 이전 버튼-->
+                    <Button
+                        android:id="@+id/left"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/icon_left"
+                        android:onClick="pictureMove" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+            <LinearLayout
+                android:id="@+id/information_viewGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/garden_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquare_b"
+                    android:text="서울어린이대공원식물원"
+                    android:textColor="#151515"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="65dp"
+                    android:background="@drawable/bottom_storke_title"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+
+
+                    <TextView
+                        android:id="@+id/map_train"
+                        style="@style/TEXTVIEW_STYLE_SUB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="서울시 어딘가 샬라샬라" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:padding="10dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/site"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="35dp"
+                            android:layout_toLeftOf="@+id/call"
+                            android:background="@drawable/icon_site"
+                            android:onClick="onClick" />
+
+                        <Button
+                            android:id="@+id/call"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="35dp"
+                            android:layout_toLeftOf="@+id/map_btn"
+                            android:background="@drawable/icon_call"
+                            android:onClick="onClick" />
+
+
+                        <Button
+                            android:id="@+id/map_btn"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/icon_map"
+                            android:onClick="onClick" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 설명 부분 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_storke"
+                    android:paddingHorizontal="10dp"
+                    android:paddingBottom="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TEXTVIEW_STYLE_TITLE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="입장료" />
+
+                        <TextView
+                            android:id="@+id/garden_price"
+                            style="@style/TEXTVIEW_STYLE_SUB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:text="성인 100만원 어린이 무료" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_storke"
+                    android:paddingHorizontal="10dp"
+                    android:paddingBottom="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TEXTVIEW_STYLE_TITLE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="영업 정보" />
+
+                        <TextView
+                            android:id="@+id/garden_time"
+                            style="@style/TEXTVIEW_STYLE_SUB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:text="지점장이 열고싶을 떄" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_storke"
+                    android:paddingHorizontal="10dp"
+                    android:paddingBottom="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TEXTVIEW_STYLE_TITLE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="반입 금지 물품" />
+
+                        <TextView
+                            android:id="@+id/garden_dont"
+                            style="@style/TEXTVIEW_STYLE_SUB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:text="주류, 버너, 텐트, 그늘막, 운동기구 등\n소형 탑승기구(자전거, 인라인 등)\n기타 위협을 줄 수 있는 물품" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TEXTVIEW_STYLE_TITLE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="대여 안내" />
+
+                        <TextView
+                            android:id="@+id/garden_rent"
+                            style="@style/TEXTVIEW_STYLE_SUB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:text="유모차 및 휠체어" />
+                    </LinearLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

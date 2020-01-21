@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context=".MyFlower.MyFlowerLvUpActivity">
+
+    <ImageView
+        android:id="@+id/myflower_lvup_image"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/myflower_pungran_1" />
+
+    <TextView
+        android:id="@+id/myflower_lvup_nick"
+        style="@style/TEXTVIEW_STYLE_BIGTITLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="애칭 이/가 성장했습니다!" />
+
+</LinearLayout>

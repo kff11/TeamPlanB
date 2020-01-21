@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/viewPager_Image_01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewpager_image_height"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/viewPager_Image_02"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewpager_image_height"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/viewPager_Image_03"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewpager_image_height"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/viewPager_Image_04"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewpager_image_height"
+        android:scaleType="centerCrop"/>
+
+</FrameLayout>

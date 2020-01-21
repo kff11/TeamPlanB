@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainFragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp">
+
+            <TextView
+                style="@style/TEXTVIEW_STYLE_CHORR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text=" 초르르 서울" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginHorizontal="20dp">
+
+            <ImageView
+                android:id="@+id/stamp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stamp_bg_summer" />
+
+            <Button
+                android:id="@+id/stamp_btn"
+                style="@style/TEXTVIEW_STYLE_TITLE"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_button"
+                android:onClick="onClick"
+                android:text="출석하기"
+                android:textColor="#2c6340"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/stamp1"
+                        android:layout_width="60dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/stamp_summer"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/stamp2"
+                        android:layout_width="60dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/stamp_summer"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:id="@+id/stamp3"
+                        android:layout_width="60dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/stamp_summer"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:id="@+id/stamp4"
+                        android:layout_width="60dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/stamp_summer"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"></LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/bottom_storke">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TEXTVIEW_STYLE_BIGTITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="핫! 한 식물원" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_recyclerView_rcmd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/view_radius"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:src="@drawable/zeropay" />
+
+            <TextView
+                style="@style/TEXTVIEW_STYLE_SUB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="제로페이 이용 시 서울시 식물원 입장료 30% 할인!" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/seoulAPI_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/view_radius"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                style="@style/TEXTVIEW_STYLE_BIGTITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="17dp"
+                android:text="서울시 미세먼지 확인" />
+
+            <kr.go.seoul.airquality.AirQualityButtonTypeB
+                android:id="@+id/type_B"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"></kr.go.seoul.airquality.AirQualityButtonTypeB>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
